@@ -19,7 +19,7 @@ public class CapabilityResourceAssembler implements ResourceAssembler<Capability
                 linkTo(methodOn(CapabilityController.class).getCapability(entity.getId())).withRel("getThisCapability"),
                 linkTo(methodOn(CapabilityController.class).deleteCapability(entity.getId())).withRel("deleteThisCapability"),
                 linkTo(methodOn(CapabilityController.class).getAllCapabilities()).withRel("getAllCapabilities"),
-                new Link("http://localhost:8080/dashboard/"+entity.getId()).withRel("updateThisCapability")
+                new Link("http://https://mostafa-elbesh-spring-redux.herokuapp.com/dashboard/"+entity.getId()).withRel("updateThisCapability")
                 );
     }
 }
