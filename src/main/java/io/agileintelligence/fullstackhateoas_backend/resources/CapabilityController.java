@@ -38,7 +38,7 @@ public class CapabilityController {
 
         return new Resources<>(capabilityService.getAllCapabilities().stream()
                 .map(capability -> assembler.toResource(capability)).collect(Collectors.toList()),
-                new Link("http://localhost:8080/dashboard").withRel("createCapability")
+                new Link("https://mostafa-elbesh-spring-redux.herokuapp.com/dashboard").withRel("createCapability")
                 );
     }
 
